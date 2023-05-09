@@ -1,0 +1,73 @@
+.MainCard{
+/* display: flex; */
+width: 100%;
+margin: 30px 30px;
+
+}
+.smallBox-card{
+    position: relative;
+    width: 20%;
+  
+}
+
+
+/* parent */
+.imageBox{
+    width: 100%;
+    height: 350px;
+}
+.imageBox img{
+width: 100%;
+object-fit: cover;
+object-position: center;
+height: 100%;
+}
+
+.targetImage img{
+  
+}
+/* child */
+.targetSale{
+  padding:5px 15px ;
+    background-color: black;
+    color: white;
+
+ position: absolute;
+ top: 0;
+ right: 0;
+
+}
+
+.targetHover{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* trasfoem traslate make box perfect center */
+    background-color: aqua;
+    font-size: 17px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    width: 70%;
+    text-align: center;
+    
+}
+
+.smallBox-card:hover .imageBox img{
+    opacity: 0.5;
+ 
+}
+
+.card-text{
+    text-align: center;
+    padding-top: 20px;
+}
+.card-text del{
+margin-left: 10px;
+color: red;
+}
+

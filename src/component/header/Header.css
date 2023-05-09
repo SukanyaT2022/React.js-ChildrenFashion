@@ -1,0 +1,36 @@
+.bigBox-header{
+display: flex;
+}
+
+.logo{
+    width: 33%;
+
+}
+
+.searchBox-BigBox{
+width:33%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.logIn{
+    width: 33%;
+
+}
+.targetSearchBox{
+    width: 70%;
+    padding: 8px 10px;
+    /* border: none;
+    border-bottom: 2px solid black; */
+}
+
+.controlSearchIcon{
+margin-left: -40px;
+margin-top: -5px;
+font-size: 20px;
+color: black;
+
+}
