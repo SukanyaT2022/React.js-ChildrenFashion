@@ -1,33 +1,51 @@
 import React from 'react'
 import "./Card.css"
 import { FaBeer, FaStar } from 'react-icons/fa';
+import {shirt, dress,accesories } from './data';
 
 const Card = () => {
+  console.log("key shirt", shirt)
   return (
-    <div className='MainCard'>
+   <>
+   {
+    shirt.map((singleShirt)=>(
+      <div className='MainCard' key={singleShirt.id}>
+         {/* //this line keep track all individual the shirt from react */}
 
 
       <div className='smallBox-card'>
         <div className='imageBox'>
            
-               <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hpbGRyZW4lMjBmYXNoaW9ufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=700&q=60"   width="200px" height="200px" />
+               <img src={singleShirt.url}  width="200px" height="200px" />
+            {/* line above connct to url in data.js file */}
             </div>
-            <div className='targetSale'>SALE</div> 
+            <div className='targetSale'>{singleShirt.season}</div> 
+            {/* line above also connct to data.js season: */}
             <div className='targetHover'>Quick View</div>
        
         <div className='card-text'>
-            <h3>Flame Set</h3>
+            <h3>{singleShirt.name}</h3>
+            {/* //this line above also link to data.js name: */}
+
+
           <div className='starAndReview'>
               <FaStar/> 
               <FaStar/> 
               <FaStar/> 
               <FaStar/> 
-              <p>  Reviews</p>
+              <p>{singleShirt.reviews}</p>
+                {/* //this line above also link to data.js review: */}
               </div>
-            <p>$40<del>$30</del></p>
+
+            <p>${singleShirt.price}<del>${singleShirt.discountPrice}</del></p>
+             {/* //this line above also link to data.js price: */}
         </div>
         </div>
     </div>
+
+    ))
+   }
+   </>
   )
 }
 
