@@ -71,3 +71,15 @@ margin-left: 10px;
 color: red;
 }
 
+.starAndReview{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+
+
+}
+
+.starAndReview p{
+    margin: 0px 0px 0px 5px;
+}

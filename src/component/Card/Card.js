@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Card.css"
+import { FaBeer, FaStar } from 'react-icons/fa';
 
 const Card = () => {
   return (
@@ -16,7 +17,13 @@ const Card = () => {
        
         <div className='card-text'>
             <h3>Flame Set</h3>
-            <p>  Reviews</p>
+          <div className='starAndReview'>
+              <FaStar/> 
+              <FaStar/> 
+              <FaStar/> 
+              <FaStar/> 
+              <p>  Reviews</p>
+              </div>
             <p>$40<del>$30</del></p>
         </div>
         </div>

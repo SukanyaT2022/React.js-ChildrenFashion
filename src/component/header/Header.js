@@ -18,9 +18,9 @@ const Header = () => {
      </div>
 
       <div className="logIn">
-      <h4><FaRegUser/>LOGIN</h4>
-      <h4>CONTACT US</h4>
-      <h4>MY BAG</h4>
+      <h5><a href=""><FaRegUser/></a>LOGIN</h5>
+      <h5>CONTACT US</h5>
+      <h5>MY BAG</h5>
    
 
 
