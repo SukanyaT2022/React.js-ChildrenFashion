@@ -35,7 +35,40 @@ export const shirt = [
         price: 30,
         season: "Sales",
         url: "https://images.unsplash.com/photo-1503342484812-ee33283508a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGdpcmwlMjB0JTIwc2hpcnQlMjBraWR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        id:5,
+        name:"shirt4",
+        reviews: "",
+        price: 40,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1503342484812-ee33283508a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGdpcmwlMjB0JTIwc2hpcnQlMjBraWR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        id:6,
+        name:"shirt4",
+        reviews: "",
+        price: 20,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1503342484812-ee33283508a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGdpcmwlMjB0JTIwc2hpcnQlMjBraWR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        id:7,
+        name:"shirt4",
+        reviews: "",
+        price: 10,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1503342484812-ee33283508a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGdpcmwlMjB0JTIwc2hpcnQlMjBraWR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        id:8,
+        name:"shirt4",
+        reviews: "",
+        price: 20,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1503342484812-ee33283508a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGdpcmwlMjB0JTIwc2hpcnQlMjBraWR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
     }
+
 
 ]
 

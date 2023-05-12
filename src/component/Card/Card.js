@@ -1,52 +1,49 @@
-import React from 'react'
-import "./Card.css"
+import React from 'react';
+import './Card.css';
 import { FaBeer, FaStar } from 'react-icons/fa';
-import {shirt, dress,accesories } from './data';
+import { shirt, dress, accesories } from './data';
 
 const Card = () => {
-  console.log("key shirt", shirt)
+  console.log('key shirt', shirt);
   return (
-   <>
-   {
-    shirt.map((singleShirt)=>(
-      <div className='MainCard' key={singleShirt.id}>
-         {/* //this line keep track all individual the shirt from react */}
+    <div className="wrapper">
+      {shirt.map((singleShirt) => (
+        <div className="MainCard" key={singleShirt.id}>
+          {/* //this line keep track all individual the shirt from react */}
 
-
-      <div className='smallBox-card'>
-        <div className='imageBox'>
-           
-               <img src={singleShirt.url}  width="200px" height="200px" />
-            {/* line above connct to url in data.js file */}
+          <div className="smallBox-card">
+            <div className="imageBox">
+              <img src={singleShirt.url} />
+              {/* line above connct to url in data.js file */}
             </div>
-            <div className='targetSale'>{singleShirt.season}</div> 
+            <div className="targetSale">{singleShirt.season}</div>
             {/* line above also connct to data.js season: */}
-            <div className='targetHover'>Quick View</div>
-       
-        <div className='card-text'>
-            <h3>{singleShirt.name}</h3>
-            {/* //this line above also link to data.js name: */}
+            <div className="targetHover">Quick View</div>
 
+            <div className="card-text">
+              <h3>{singleShirt.name}</h3>
+              {/* //this line above also link to data.js name: */}
 
-          <div className='starAndReview'>
-              <FaStar/> 
-              <FaStar/> 
-              <FaStar/> 
-              <FaStar/> 
-              <p>{singleShirt.reviews}</p>
+              <div className="starAndReview">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <p>{singleShirt.reviews}</p>
                 {/* //this line above also link to data.js review: */}
               </div>
 
-            <p>${singleShirt.price}<del>${singleShirt.discountPrice}</del></p>
-             {/* //this line above also link to data.js price: */}
+              <p>
+                ${singleShirt.price}
+                <del>${singleShirt.discountPrice}</del>
+              </p>
+              {/* //this line above also link to data.js price: */}
+            </div>
+          </div>
         </div>
-        </div>
+      ))}
     </div>
+  );
+};
 
-    ))
-   }
-   </>
-  )
-}
-
-export default Card
+export default Card;
