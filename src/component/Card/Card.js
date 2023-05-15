@@ -18,7 +18,7 @@ const Card = () => {
             </div>
             <div className="targetSale">{singleShirt.season}</div>
             {/* line above also connct to data.js season: */}
-            <div className="targetHover">Quick View</div>
+            {/* <div className="targetHover">Quick View</div> */}
 
             <div className="card-text">
               <h3>{singleShirt.name}</h3>
@@ -29,6 +29,7 @@ const Card = () => {
                 <FaStar />
                 <FaStar />
                 <FaStar />
+                <p>Review</p>
                 <p>{singleShirt.reviews}</p>
                 {/* //this line above also link to data.js review: */}
               </div>
