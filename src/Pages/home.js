@@ -1,9 +1,18 @@
 import React from 'react'
+import './home.css'
 
-const home = () => {
+import Navbar from './../component/header/Navbar'
+import Layout from '../component/Layout/layout'
+
+const Home = () => {
   return (
-    <div>home</div>
+<Layout>
+<p className='controlHello'>Hello</p>
+
+</Layout>
+     
+  
   )
 }
 
-export default home
+export default Home

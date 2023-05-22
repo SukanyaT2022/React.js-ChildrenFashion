@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Layout from '../component/Layout/layout'
 const dress = () => {
   return (
-    <div>dress</div>
+    <Layout>
+    <p >dress</p>
+    
+    </Layout>
   )
 }
 

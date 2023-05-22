@@ -1,9 +1,13 @@
 import './App.css';
-import Header from './component/header/Header';
-import Navbar from './component/header/Navbar';
-import BigHero from './component/BigHero/BigHero';
-import Card from './component/Card/Card';
-import Footer from './component/footer/Footer';
+import Home from './Pages/home';
+import Accessorie from './Pages/accessorie';
+import Contact from './Pages/contact';
+import Dress from './Pages/dress';
+import LogIn from './Pages/logIn';
+import Tshirt from './Pages/tshirt';
+
+
+
 // footer is name folder Footer is file name
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,12 +21,11 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/tshirt' element={<Tshirt/>}/>  
          <Route path='/dress' element={<Dress/>}/>
-         <Route path='/accessories' element={<Accessories/>}/>
-         <Route path='/logIn' element={<Login/>}/>
+         <Route path='/accessorie' element={<Accessorie/>}/>
+         <Route path='/login' element={<LogIn/>}/>
          <Route path='/contact' element={<Contact/>}/>
       </Routes>
-      
-      
+    
       </BrowserRouter>
     </div>
   );

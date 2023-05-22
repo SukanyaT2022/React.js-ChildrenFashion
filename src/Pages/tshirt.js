@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Layout from '../component/Layout/layout'
 const tshirt = () => {
   return (
-    <div>tshirt</div>
+  <Layout>
+    <p>Tshirt</p>
+  </Layout>
   )
 }
 
