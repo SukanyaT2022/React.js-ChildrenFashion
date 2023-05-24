@@ -16,7 +16,7 @@ function NavBarCustom() {
             <Nav className="me-auto">
               <Nav.Link href="/tshirt">T-Shirts</Nav.Link>
               <Nav.Link href="/dress">Dresses</Nav.Link>
-              <Nav.Link href="/dress">Accesories</Nav.Link>
+              <Nav.Link href="/accessorie">Accessories</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">

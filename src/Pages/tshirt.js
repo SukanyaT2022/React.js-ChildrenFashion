@@ -1,10 +1,15 @@
 import React from 'react'
 import Layout from '../component/Layout/layout'
+import Card from '../component/Card/Card'
+import { shirt } from '../component/Card/data' // this line from data.js link to line 10{shirt}
 const tshirt = () => {
   return (
+    <div>
   <Layout>
     <p>Tshirt</p>
+    <Card data={shirt}/>
   </Layout>
+  </div>
   )
 }
 

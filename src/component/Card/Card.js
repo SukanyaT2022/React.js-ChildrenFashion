@@ -1,13 +1,13 @@
 import React from 'react';
 import './Card.css';
 import { FaBeer, FaStar } from 'react-icons/fa';
-import { shirt, dress, accesories } from './data';
 
-const Card = () => {
-  console.log('key shirt', shirt);
+
+const Card = ({data}) => {
+
   return (
     <div className="wrapper">
-      {shirt.map((singleShirt) => (
+      {data.map((singleShirt) => (
         <div className="MainCard" key={singleShirt.id}>
           {/* //this line keep track all individual the shirt from react */}
 

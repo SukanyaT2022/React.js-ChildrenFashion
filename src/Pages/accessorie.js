@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../component/Layout/layout'
-const accessorie = () => {
+const Accessorie = () => {
   return (
    <Layout>
     <p>Accesories</p>
@@ -8,4 +8,4 @@ const accessorie = () => {
   )
 }
 
-export default accessorie
+export default Accessorie

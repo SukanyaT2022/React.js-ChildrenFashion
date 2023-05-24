@@ -3,10 +3,14 @@ import './Header.css';
 import img1 from '../../assets/images/ranbowLogoEdit.png';
 // import img1 from '../../assets/images/rainbow1.jpg';
 import { FaRegUser, FaSearch } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
+  const navigate = useNavigate(); // this is a hook for link to the home page 
   return (
-    <div className="bigBox-header">
+    //onClick={()=>{navigate('/')}} below call the hook line 10 to link to home page
+    <div className="bigBox-header" onClick={()=>{navigate('/')}}>
       <div className="logo">
         <img src={img1} width={150} height={150} className='logoRainbow'/>
       </div>
