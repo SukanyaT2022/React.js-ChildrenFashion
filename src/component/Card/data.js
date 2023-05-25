@@ -113,7 +113,49 @@ export const dress = [
         url: "https://images.unsplash.com/photo-1474325585148-23f982efe44c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMGRyZXNzJTIwa2lkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
 
 
+    },
+    {
+        id:26,
+        name:"dress4",
+        reviews: "",
+        price: 30,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1474325585148-23f982efe44c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMGRyZXNzJTIwa2lkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+
+
+    },
+    {
+        id:27,
+        name:"dress4",
+        reviews: "",
+        price: 30,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1474325585148-23f982efe44c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMGRyZXNzJTIwa2lkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+
+
+    },
+    {
+        id:28,
+        name:"dress4",
+        reviews: "",
+        price: 30,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1474325585148-23f982efe44c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMGRyZXNzJTIwa2lkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+
+
+    },
+    {
+        id:29,
+        name:"dress4",
+        reviews: "",
+        price: 30,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1474325585148-23f982efe44c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMGRyZXNzJTIwa2lkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+
+
     }
+
+
 
 ]
 
@@ -148,6 +190,43 @@ export const accesories = [
     },
     {
         id:36,
+        name:"accesories4",
+        reviews: "",
+        price: 30,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hpbGRyZW4lMjBmYXNoaW9ufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+
+    },
+    {
+        id:37,
+        name:"accesories1",
+        reviews: "",
+        price: 30,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1484820540004-14229fe36ca4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dG95JTIwa2lkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+
+
+    },
+    {
+        id:38,
+        name:"accesories2",
+        reviews: "",
+        price: 30,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1485460535564-844461f37f77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRveSUyMGtpZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+
+
+    },
+    {
+        id:39,
+        name:"accesories3",
+        reviews: "",
+        price: 30,
+        season: "Sales",
+        url: "https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hpbGRyZW4lMjBmYXNoaW9ufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        id:40,
         name:"accesories4",
         reviews: "",
         price: 30,

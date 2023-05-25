@@ -48,3 +48,9 @@
   font-size: 20px;
   color: black;
 }
+
+/* pop up loig in page */
+
+.targetBackground{
+  background-image:url("../../assets/images/raibow2.jpg") ;
+}
