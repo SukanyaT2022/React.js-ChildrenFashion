@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    overflow-x: hidden;
+}
+
+.mainBox-footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    background-color: #E5E8E8 ;
+    padding: 20px;
+  
+
+}
+
+.samllBox-footer{
+
+}
+.samllBox-footer h2{
+    font-size: 25px;
+
+}
+
+.controlUL li{
+    /* no dot */
+    list-style: none;
+
+
+}
+.controlRaibowFooter{
+    margin-right: 5px;
+   color: pink;
+
+}
