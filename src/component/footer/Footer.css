@@ -1,37 +1,111 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-html,body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
-.mainBox-footer{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-    background-color: #E5E8E8 ;
-    padding: 20px;
+.mainBox-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  background-color: #e5e8e8;
+  padding: 20px;
+margin-bottom: -20px;
+
+}
+
+.samllBox-footer {
+}
+.samllBox-footer h2 {
+  font-size: 25px;
+}
+
+.controlUL li {
+  /* no dot */
+  list-style: none;
+}
+.controlRaibowFooter {
+  margin-right: 5px;
+  animation: animationRainbow 2s infinite;
+}
+@keyframes animationRainbow {
+  0% {
+    color: violet;
+  }
+  15% {
+    color: indigo;
+  }
+  15% {
+    color: indigo;
+  }
+  30% {
+    color: blue;
+  }
+  45% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  75% {
+    color: orange;
+  }
+  90% {
+    color: red;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+.controlInputBox {
+    margin: 15px 5px;
+}
+.controlInputEmail {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  padding: 5px 10px;
+}
+.controlSubmitBox {
+  padding: 7px 30px;
+ 
+  margin: 10px 0px 10px 50px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.controlSubmitBox:hover {
+  background-color: violet;
+}
+
+
+.controlBox1{
+    padding-left: 80px;
+
+}
+/* .controlBox1 h2{
+  margin-left: -20px;
+} */
+
+.moveSmallBoxLeft{
+    padding-left: 50px;
+}
+.copyRight{
+    background-color: #e5e8e8;
+   /* display: flex; 
+   align-items: center;
+   justify-content: center; */
+   text-align: center;
+ padding-bottom: 10px;
+
   
-
 }
-
-.samllBox-footer{
-
-}
-.samllBox-footer h2{
-    font-size: 25px;
-
-}
-
-.controlUL li{
-    /* no dot */
-    list-style: none;
-
-
-}
-.controlRaibowFooter{
-    margin-right: 5px;
-   color: pink;
-
+.copyRight hr{
+    height: 2px!important;
+    background-color: grey;
 }
