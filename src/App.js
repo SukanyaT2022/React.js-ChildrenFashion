@@ -1,9 +1,9 @@
 import './App.css';
 import Home from './Pages/home';
 import Accessorie from './Pages/accessorie';
-import Contact from './Pages/contact';
+// import Contact from './Pages/contact';
 import Dress from './Pages/dress';
-import LogIn from './Pages/logIn';
+// import LogIn from './Pages/logIn';
 import Tshirt from './Pages/tshirt';
 
 
@@ -22,8 +22,8 @@ function App() {
         <Route path='/tshirt' element={<Tshirt/>}/>  
          <Route path='/dress' element={<Dress/>}/>
          <Route path='/accessorie' element={<Accessorie/>}/>
-         <Route path='/login' element={<LogIn/>}/>
-         <Route path='/contact' element={<Contact/>}/>
+         {/* <Route path='/login' element={<LogIn/>}/> */}
+         {/* <Route path='/contact' element={<Contact/>}/> */}
       </Routes>
     
       </BrowserRouter>

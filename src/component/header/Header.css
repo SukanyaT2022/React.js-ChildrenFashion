@@ -63,3 +63,7 @@ border-image-slice: 1;
 .targetBackground{
   background-image:url("../../assets/images/raibow2.jpg") ;
 }
+
+.contactUs{
+cursor: pointer;
+}
