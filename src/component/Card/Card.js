@@ -36,9 +36,13 @@ const Card = ({data}) => {
 
               <p>
                 ${singleShirt.price}
-                <del>${singleShirt.discountPrice}</del>
+                <span>${singleShirt.discountPrice}</span>
               </p>
               {/* //this line above also link to data.js price: */}
+             <div className='buttonAddBag'>
+        <button>ADD TO BAG</button>
+             </div>
+
             </div>
           </div>
         </div>

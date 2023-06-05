@@ -76,9 +76,10 @@ height: 100%;
     text-align: center;
     padding-top: 20px;
 }
-.card-text del{
+.card-text span{
 margin-left: 10px;
 color: red;
+
 }
 
 .starAndReview{
@@ -91,5 +92,16 @@ color: red;
 
 .starAndReview p{
     margin: 0px 0px 0px 7px;
+}
+.buttonAddBag{
+margin-bottom: 20px;
+
+}
+
+.buttonAddBag button{
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
 }
 

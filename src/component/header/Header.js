@@ -71,7 +71,7 @@ LOGIN
 
 
 
-        <h5>MY BAG</h5>
+        <a href='/myBagCheckout'><h5>MY BAG</h5></a>
       </div>
       {/* code below for log in react boostrap */}
 
