@@ -25,6 +25,9 @@
   font-size: 15px; 
   margin: 0px 20px;
 }
+.logIn h5:hover{
+  color: violet;
+}
 
 .logIn h5 a{
   margin-right: 10px;
@@ -66,4 +69,17 @@ border-image-slice: 1;
 
 .contactUs{
 cursor: pointer;
+}
+
+.contactUs:hover{
+color: violet;
+}
+
+.aTagMybag{
+  text-decoration: none;
+  color: black;
+}
+
+.aTagMybag:hover{
+  color: violet;
 }
