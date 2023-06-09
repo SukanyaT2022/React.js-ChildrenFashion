@@ -4,6 +4,7 @@ import Header from '../component/header/Header'
 import NavBar from '../component/header/Navbar'
 import Footer from '../component/footer/Footer'
 import Dropdown from 'react-bootstrap/Dropdown';
+import './myBagCheckout.css'
 
 const MyBagCheckout = () => {
   //we make state below this line--inside [] cardItem is array -do  hold value that we add to the card 
@@ -40,7 +41,9 @@ const addItemToCart =(product)=>{
 
 // ES6 way
 //const cloneSheepsES6 = [...sheeps];
-  setCardItems([...cardItems, newCarditem])
+
+
+  // setCardItems([...cardItems, newCarditems])
 
 
 } 
@@ -49,10 +52,22 @@ const addItemToCart =(product)=>{
     <Header/> 
      <NavBar/>
 <div className='mainBox-checkout'>
+  
+<h3>My Bag</h3>
+<div class="control2SmallBox">
+
+
+  <div className='smallleftBox-showOrder'>
+    
 <div className='picLeft-checkout'>picture here </div>
 <div className='textRight-checkout'>
+
+  <h4>Dress1</h4>
+  <p>ID:1234</p>
+  <p>Price: "$35"</p>
+  
   {/* dropdown */}
-<div>
+
 
     <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -65,15 +80,20 @@ const addItemToCart =(product)=>{
         <Dropdown.Item href="#/action-3">3</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
+    </div>
   <div className='totalPrice'>
-<p>$100</p>
+<p>Total $100</p>
   </div>
 
 </div>
+
+{/* smallbox right summary order */}
+
+<div className='smallrightBox-orderSummary'>
+
 </div>
 
-
-
+</div>
 
   </div>
 

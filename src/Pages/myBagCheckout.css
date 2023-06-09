@@ -1,0 +1,41 @@
+.mainBox-checkout{
+width: 90%;
+margin: auto;
+
+}
+.control2SmallBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.smallleftBox-showOrder{
+width: 65%;
+background-color: antiquewhite;
+display: flex;
+}
+
+.picLeft-checkout{
+background-image:url("https://images.unsplash.com/photo-1611003967145-fb3960072424?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z2lybCUyMGRyZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60") ;
+width: 30%;
+height: 250px;
+background-size: cover;
+}
+.textRight-checkout{
+width: 50%;
+padding-left: 20px;
+padding-top: 20px;
+
+}
+.totalPrice{
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+width: 20%;
+padding-right: 20px;
+}
+
+.smallrightBox-orderSummary{
+width: 30%;
+background-color: aqua;
+
+}
