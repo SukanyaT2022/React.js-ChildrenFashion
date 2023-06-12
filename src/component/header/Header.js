@@ -75,9 +75,10 @@ LOGIN
       </div>
       {/* code below for log in react boostrap */}
 
-      <Modal show={show} onHide={handleClose}className='targetBackground'>
+      <Modal show={show} onHide={handleClose}>
+      <div className='targetBackground'>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Log In</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form >
@@ -93,27 +94,32 @@ LOGIN
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+ <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                autoFocus
+              />
+        
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
+         
+          <Button variant="dark" onClick={handleClose} className='singin-button'>
+          Sign In
           </Button>
         </Modal.Footer>
+        </div>
       </Modal>
 
 {/* //below contact us section */}
-<Modal show={show2} onHide={handleClose2}className='targetBackground'>
+<Modal show={show2} onHide={handleClose2} >
+  <div className='targetBackground'>
         <Modal.Header closeButton>
-          <Modal.Title>Contact US</Modal.Title>
+          <Modal.Title>Contact Us</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body >
           <Form >
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
@@ -127,19 +133,20 @@ LOGIN
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>Example textarea</Form.Label>
+              <Form.Label>Messages</Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose2}>
+          <Button variant="dark" onClick={handleClose2}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose2}>
+          <Button variant="dark" onClick={handleClose2}>
             Save Changes
           </Button>
         </Modal.Footer>
+        </div>
       </Modal>
 
 

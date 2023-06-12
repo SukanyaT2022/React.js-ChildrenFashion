@@ -59,7 +59,7 @@ const addItemToCart =(product)=>{
 
   <div className='smallleftBox-showOrder'>
     
-<div className='picLeft-checkout'>picture here </div>
+<div className='picLeft-checkout'></div>
 <div className='textRight-checkout'>
 
   <h4>Dress1</h4>
@@ -90,6 +90,21 @@ const addItemToCart =(product)=>{
 {/* smallbox right summary order */}
 
 <div className='smallrightBox-orderSummary'>
+  <h3>Order Summary</h3>
+
+  <div className='control2box-subtotalAndNumber'>
+    <div className='subtotal-text'>
+<h4>Subtotal</h4>
+<h4>Total</h4>
+    </div>
+    <div className='subtotal-number'>
+<div>$0.00</div>
+<div>$0.00</div>
+</div>
+  </div>
+
+<input type="button" value="CHECK OUT" className='button-checkout'/>
+
 
 </div>
 

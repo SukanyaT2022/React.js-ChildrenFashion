@@ -65,6 +65,7 @@ border-image-slice: 1;
 
 .targetBackground{
   background-image:url("../../assets/images/raibow2.jpg") ;
+background-size: cover;
 }
 
 .contactUs{
@@ -82,4 +83,18 @@ color: violet;
 
 .aTagMybag:hover{
   color: violet;
+}
+
+.targetBackground button{
+font-weight: bold;
+
+}
+.targetBackground label{
+  font-weight: bold;
+}
+.singin-button{
+  padding: 7px 50px!important;
+display: block!important;
+margin: auto!important;
+  
 }
