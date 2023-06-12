@@ -11,10 +11,13 @@ import Tshirt from './Pages/tshirt';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MyBagCheckout from './Pages/myBagCheckout';
+import DataProvider from './DataProvider';
 
 function App() {
   return (
-    <div>
+    //now DataProvider is a parent and  all inside are childre
+    <DataProvider>
+ 
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,12 +25,14 @@ function App() {
           <Route path="/dress" element={<Dress />} />
           <Route path="/accessorie" element={<Accessorie />} />
           <Route path="/myBagCheckout" element={<MyBagCheckout />} />
+          
           {/* //MybagCheckout is component */}
           {/* <Route path='/login' element={<LogIn/>}/> */}
           {/* <Route path='/contact' element={<Contact/>}/> */}
         </Routes>
       </BrowserRouter>
-    </div>
+  
+    </DataProvider>
   );
 }
 

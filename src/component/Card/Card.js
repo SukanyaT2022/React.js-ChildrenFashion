@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Card.css';
 import { FaBeer, FaStar } from 'react-icons/fa';
+import DataContext from '../../DataContext';
 
 
 const Card = ({data}) => {
-
+const {updateData,message} = useContext(DataContext)
   return (
+    <>
+    <div className='card-message'>
+      <h1>{message && message}</h1>
+
+    </div>
     <div className="wrapper">
       {data.map((singleShirt) => (
         <div className="MainCard" key={singleShirt.id}>
@@ -40,7 +46,19 @@ const Card = ({data}) => {
               </p>
               {/* //this line above also link to data.js price: */}
              <div className='buttonAddBag'>
-        <button>ADD TO BAG</button>
+        <button 
+        onClick={()=>updateData(
+          {
+            id : singleShirt.id,
+            name : singleShirt.name,
+            price : singleShirt.price,
+            url : singleShirt.url,
+            quantity : 1
+          }
+        )}
+        
+        
+        >ADD TO BAG</button>
              </div>
 
             </div>
@@ -48,6 +66,7 @@ const Card = ({data}) => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
