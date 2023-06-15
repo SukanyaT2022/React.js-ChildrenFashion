@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Layout from '../component/Layout/layout'
 import Header from '../component/header/Header'
 import NavBar from '../component/header/Navbar'
 import Footer from '../component/footer/Footer'
 import Dropdown from 'react-bootstrap/Dropdown';
 import './myBagCheckout.css'
+import DataContext from '../DataContext'
 
 const MyBagCheckout = () => {
+  const{data} = useContext(DataContext)
+ 
+
   //we make state below this line--inside [] cardItem is array -do  hold value that we add to the card 
   //setCardItem is method function to put the value inside card item array like .push
  //const student = {
@@ -27,12 +31,29 @@ const MyBagCheckout = () => {
   const [products, setProducts] = useState([])
   const [totalPrice, setTotalPrice] = useState([])
 
+  //useEffect below
+useEffect(()=>{
+  let startTotalPrice = 0;
+  cardItems.forEach((item)=>{
+startTotalPrice += item.price * item.quantity
+//quantity is in card.js line 56
+  });
+  setTotalPrice(startTotalPrice);
+
+
+
+},[cardItems])
+
 const addItemToCart =(product)=>{
   const newCartItem = {
     id: product.id,
     name: product.name,
-    price: product.price
+    price: product.price,
+    quantity:quantity,
+    img:product.url,
+    //url quantity come from card.js line 57
   };
+
 
   //below is state on line 25 copy array and add new thing to array
   //... is clone array
@@ -43,10 +64,20 @@ const addItemToCart =(product)=>{
 //const cloneSheepsES6 = [...sheeps];
 
 
-  // setCardItems([...cardItems, newCarditems])
-
+  setCardItems([...cardItems, newCarditem])//newCradItem match line 48
 
 } 
+//below is function remove item from card
+const removeItemFromCart =(index)=>{
+const removeItem = cardItems[index];
+const updateTotalPrice = totalPrice - removeItem.price*removeItem.quantity;
+setTotalPrice(updateTotalPrice);
+const updatedCartItems = cardItems.filter((_, i)=>i !== index)
+//.filter is method  everything = to index filter will block
+setCardItems(updatedCartItems)
+}
+
+
   return (
     <div>
     <Header/> 
@@ -54,6 +85,52 @@ const addItemToCart =(product)=>{
 <div className='mainBox-checkout'>
   
 <h3>My Bag</h3>
+{
+  //below if else es6
+  data ? (
+    <>
+    {/* //map is method  */}
+    {data.map(product,index)=>{
+      if (!products){
+        return null
+      }
+      const Quantity = product.quantity
+      return (
+        <li key={product.id}>
+          <div className='control2SmallBox'>
+<div className='smallleftBox-showOrder'>
+<div className='picLeft-checkout'>
+<img src = {product.url}
+alt={product.name} height={150} width={150}/>
+</div>
+
+<div className='textRight-checkout'>
+  <span>{product.name}-${product.price}</span>
+</div>
+<div className='quantity-dropdown'>
+<Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+    Quantity: {quantity}
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">1</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">2</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">3</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+</div>
+          </div>
+          </div>
+
+
+        </li>
+      )
+    }}
+    
+    </>
+  )  : ()
+}
 <div class="control2SmallBox">
 
 
@@ -69,17 +146,7 @@ const addItemToCart =(product)=>{
   {/* dropdown */}
 
 
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-    Quantity
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">1</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">2</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">3</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+  
     </div>
   <div className='totalPrice'>
 <p>Total $100</p>

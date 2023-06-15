@@ -1,6 +1,5 @@
 .wrapper{
 display: flex;
-
 height: auto;
 margin: auto;
 flex-wrap: wrap;
@@ -103,5 +102,11 @@ margin-bottom: 20px;
     background-color: black;
     color: white;
     border: none;
+}
+/*show message add to bag*/
+.card-message{
+    font-size: 12px;
+    color: green;
+    text-align: center;
 }
 
