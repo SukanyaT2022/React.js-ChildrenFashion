@@ -68,7 +68,8 @@ const Header = () => {
           CONTACT US
         </div>
 
-        <a href="/myBagCheckout" className="aTagMybag">
+        <button onClick={()=>navigate("/myBagCheckout")
+        }>
           <h5>
             MY BAG
             {bagCount > 0 && (
@@ -78,7 +79,7 @@ const Header = () => {
               </sup>
             )}
           </h5>
-        </a>
+        </button>
       </div>
       {/* code below for log in react boostrap */}
 
