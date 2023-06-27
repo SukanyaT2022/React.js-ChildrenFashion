@@ -1,4 +1,65 @@
-.controlHello{
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    overflow-x: hidden;
+}
+:root{
+    --darkRed:#E74C3C;
+}
+
+
+/* .controlHello{
     font-size: 100px;
     color: red;
+} */
+
+.mainBox-sectionOne{
+width: 100%;
+margin: auto;
+
+
+}
+
+.control-redBox{
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    background-color:var(--darkRed);
+    color: white;
+    margin: 20px auto;
+}
+.control2Box-sectionOne{
+width: 100%;
+height: 70vh;
+background-image: url("https://images.pexels.com/photos/4484876/pexels-photo-4484876.jpeg?auto=compress&cs=tinysrgb&w=800"),
+url("https://images.pexels.com/photos/3771679/pexels-photo-3771679.jpeg?auto=compress&cs=tinysrgb&w=800"),
+url("https://images.pexels.com/photos/5560536/pexels-photo-5560536.jpeg?auto=compress&cs=tinysrgb&w=800")
+
+;
+background-size: 33.33% ;
+background-repeat: no-repeat;
+background-position:left,center,right;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+.control2Box-sectionOne h1{
+font-size: 4rem;
+letter-spacing: 40px;
+}
+.control2Box-sectionOne h3{
+margin-right: 20px;
+}
+
+
+
+.ImageOne-Home{
+
+}
+.ImageTwo-Home{
+
 }
