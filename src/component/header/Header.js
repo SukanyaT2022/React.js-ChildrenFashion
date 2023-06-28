@@ -68,18 +68,18 @@ const Header = () => {
           CONTACT US
         </div>
 
-        <button onClick={()=>navigate("/myBagCheckout")
+        <p className="targetMybag" onClick={()=>navigate("/myBagCheckout")
         }>
           <h5>
             MY BAG
             {bagCount > 0 && (
               // <sup> is power2
-              <sup style={{ backgroundColor: 'Red', padding: '2px' }}>
+              <sup style={{ backgroundColor: 'Pink', padding: '4px'}}>
                 {bagCount}
               </sup>
             )}
           </h5>
-        </button>
+        </p>
       </div>
       {/* code below for log in react boostrap */}
 

@@ -74,5 +74,7 @@ margin: 20px 0px;
 
 }
 
-
+.controlUL{
+    list-style: none;
+}
 

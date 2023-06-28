@@ -21,16 +21,32 @@ const MyBagCheckout = () => {
     setTotalPrice(startTotalPrice);
   }, [cardItems]);
 
+  useEffect(() => {
+    let startTotalPrice = 0;
+    cardItems.forEach((item) => {
+      startTotalPrice += item.price * item.quantity;
+    });
+    setTotalPrice(startTotalPrice);
+  }, []);
+
   const addItemToCart = (product, quantity) => {
-    const newCartItem = {
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      quantity: quantity,
-      img: product.url,
+    const existingCartIndex = cardItems.findIndex((item)=>item.id === product.id)
+    if (existingCartIndex !== -1){
+      const updatedCartItems = [...cardItems]
+      updatedCartItems[existingCartIndex].quantity=quantity
+      setCardItems(updatedCartItems)
+    }else{
+      const newCartItem = {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        quantity: quantity,
+        img: product.url,
+      };
+      setCardItems([...cardItems, newCartItem]);
     };
-    setCardItems([...cardItems, newCartItem]);
-  };
+
+    }
 
   const removeItemFromCart = (index) => {
     const removeItem = cardItems[index];
@@ -52,8 +68,10 @@ const MyBagCheckout = () => {
               if (!product) {
                 return null;
               }
-              const quantity = product.quantity;
+             const existingCartItem = cardItems.find((Item)=>Item.id === product.id);
+             const quantity = existingCartItem ? existingCartItem.quantity : 1;
               return (
+                <ul className='controlUL'>
                 <li key={product.id}>
                   <div className="control2SmallBox">
                     <div className="smallleftBox-showOrder">
@@ -77,11 +95,12 @@ const MyBagCheckout = () => {
                             <Dropdown.Item eventKey="3">3</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
-                        <button onClick={() => removeItemFromCart(index)}>Remove</button>
+                        <button onClick={() => removeItemFromCart(product.id)}>Remove</button>
                       </div>
                     </div>
                   </div>
                 </li>
+                </ul>
               );
             })}
             <div className="smallrightBox-showOrder">Total Price ${totalPrice}</div>
