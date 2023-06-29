@@ -19,9 +19,7 @@ body,html{
 width: 100%;
 margin: auto;
 
-
 }
-
 .control-redBox{
     width: 70%;
     text-align: center;
@@ -55,11 +53,50 @@ letter-spacing: 40px;
 margin-right: 20px;
 }
 
+.controlh2backtSchool{
+color: lightslategray;
+margin: 40px 0px;
+}
 
+/* section2 */
 
-.ImageOne-Home{
+.section2{
 
 }
-.ImageTwo-Home{
+
+/* 100% mean for each column */
+.section2 img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    margin-bottom: 5px;
 
 }
+
+ /*ipad*/
+ @media screen and (max-width: 992px) {
+    .control2Box-sectionOne{
+        height: 40vh;     
+        }
+        .control-redBox{
+        margin-top:35px ;
+           
+        }
+        .section2 img{
+            height: 40vh;
+         
+        }
+.controlh2backtSchool{
+padding: 10px 0px!important;
+background-color: aqua;
+}
+ }
+ 
+ /*ipad-mini*/
+ @media screen and (max-width: 768px) {
+ }
+ 
+ /*phone*/
+ @media screen and (max-width: 600px) {
+  
+ }
