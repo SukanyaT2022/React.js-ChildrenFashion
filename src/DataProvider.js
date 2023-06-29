@@ -11,6 +11,8 @@ function DataProvider({ children }) {
   const [message, setMessage] = useState('');
   //below hold the number of item that add to card--setbag count
   const [bagCount, setBagCount] = useState(0);
+  //this state for hold all remove from the general starte to filter it out
+  const [filterData, setFilterData] = useState([]);
 
   //create function inside of function to update data
   const updateData = (newData) => {
@@ -22,9 +24,17 @@ function DataProvider({ children }) {
     setTimeout(()=>{
       setMessage('')
     },2000)
+
   };
+
+  const removeItem =(productId)=>{
+    const updateData = data.filter((item)=>item.id !== productId)
+setFilterData(updateData);
+setData(updateData)
+setBagCount(bagCount - 1)
+  }
   return (
-    <DataContext.Provider value={{ data, updateData, message, bagCount }}>
+    <DataContext.Provider value={{ data, filterData, removeItem, updateData, message, bagCount }}>
       {/* children below is render */}
       {children}
     </DataContext.Provider>

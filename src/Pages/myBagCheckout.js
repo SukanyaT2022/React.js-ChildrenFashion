@@ -8,8 +8,7 @@ import './myBagCheckout.css';
 import DataContext from '../DataContext';
 
 const MyBagCheckout = () => {
-  const { data } = useContext(DataContext);
-
+  const { data,removeItem } = useContext(DataContext);
   const [cardItems, setCardItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
 
@@ -49,11 +48,9 @@ const MyBagCheckout = () => {
     }
 
   const removeItemFromCart = (index) => {
-    const removeItem = cardItems[index];
-    const updateTotalPrice = totalPrice - removeItem.price * removeItem.quantity;
-    setTotalPrice(updateTotalPrice);
-    const updatedCartItems = cardItems.filter((_, i) => i !== index);
+    const updatedCartItems = cardItems.filter((item) => item.id !== index);
     setCardItems(updatedCartItems);
+    removeItem(index)
   };
 
   return (
@@ -85,7 +82,7 @@ const MyBagCheckout = () => {
                       </div>
                       <div className="quantity-dropdown">
                         <Dropdown onSelect={(newQuantity)=>addItemToCart(product,parseInt(newQuantity))}>
-                          <Dropdown.Toggle variant="success" id="dropdown-basic">
+                          <Dropdown.Toggle className='controlDropdown' id="dropdown-basic">
                             Quantity: {quantity}
                           </Dropdown.Toggle>
 
@@ -95,7 +92,7 @@ const MyBagCheckout = () => {
                             <Dropdown.Item eventKey="3">3</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
-                        <button onClick={() => removeItemFromCart(product.id)}>Remove</button>
+                        <button className='controlRemoveButtonCart' onClick={() => removeItemFromCart(product.id)}>Remove</button>
                       </div>
                     </div>
                   </div>

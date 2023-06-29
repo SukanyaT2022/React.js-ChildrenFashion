@@ -104,9 +104,10 @@ margin-bottom: 20px;
     border: none;
 }
 /*show message add to bag*/
-.card-message{
-    font-size: 12px;
+.showMessageAddtoCart{
+    font-size: 17px;
     color: green;
     text-align: center;
 }
+
 

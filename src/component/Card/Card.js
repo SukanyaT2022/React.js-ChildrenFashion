@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './Card.css';
 import { FaBeer, FaStar } from 'react-icons/fa';
 import DataContext from '../../DataContext';
@@ -6,12 +6,13 @@ import DataContext from '../../DataContext';
 
 const Card = ({data}) => {
 const {updateData,message} = useContext(DataContext)
-  return (
-    <>
-    <div className='card-message'>
-      <h1>{message && message}</h1>
+const [addedItem, setAddedItem] = useState(null)
 
-    </div>
+const handleAddtoBag =(item)=>{
+  setAddedItem(item)
+  updateData(item)
+}
+  return (
     <div className="wrapper">
       {data.map((singleShirt) => (
         <div className="MainCard" key={singleShirt.id}>
@@ -47,26 +48,19 @@ const {updateData,message} = useContext(DataContext)
               {/* //this line above also link to data.js price: */}
              <div className='buttonAddBag'>
         <button 
-        onClick={()=>updateData(
-          {
-            id : singleShirt.id,
-            name : singleShirt.name,
-            price : singleShirt.price,
-            url : singleShirt.url,
-            quantity : 1
-          }
-        )}
-        
-        
-        >ADD TO BAG</button>
+        onClick={()=>handleAddtoBag(singleShirt)}>ADD TO BAG</button>
              </div>
-
+{
+  addedItem && addedItem.id === singleShirt.id && (
+    <div className='showMessageAddtoCart'>{message}</div>
+  )
+}
             </div>
           </div>
         </div>
       ))}
     </div>
-    </>
+    
   );
 };
 
