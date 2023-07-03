@@ -65,7 +65,7 @@ const Header = () => {
         {/* //below handle contact us */}
 
         <div onClick={handleShow2} className="contactUs">
-          CONTACT US
+          <h5>CONTACT US</h5>
         </div>
 
         <p className="targetMybag" onClick={()=>navigate("/myBagCheckout")

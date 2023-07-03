@@ -6,7 +6,7 @@ const tshirt = () => {
   return (
     <div>
   <Layout>
-    <p>Tshirt</p>
+    <p>TOPS & T-SHIRTS</p>
     <Card data={shirt}/>
   </Layout>
   </div>

@@ -32,7 +32,21 @@
 .logIn h5 a{
   margin-right: 10px;
   color: black;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  padding: 8px 10px;
+
+  
 }
+
+.targetMybag{
+  margin-top: 16px;
+   
+  }
+  .targetMybag h5{
+    font-size: 16px;
+  }
 
 .targetSearchBox {
   width: 70%;
@@ -66,6 +80,7 @@ border-image-slice: 1;
 .targetBackground{
   background-image:url("../../assets/images/raibow2.jpg") ;
 background-size: cover;
+font-size: ;
 }
 
 .contactUs{
@@ -98,6 +113,70 @@ display: block!important;
 margin: auto!important;
   
 }
-.targetMybag{
-  margin-top: 18px;
-}
+
+ /*ipad*/
+ @media screen and (max-width: 992px) {
+  .logo {
+    width: 20%;
+    padding-left: 20px;
+   
+  }
+  
+  .searchBox-BigBox {
+    width: 30%;
+    justify-content: flex-start;
+    padding-left: 50px;
+  
+  
+  }
+  .targetSearchBox{
+    width: 90%;
+  }
+  
+  .logIn {
+    width:50%;
+  
+  }
+
+   
+ }
+ 
+ /*ipad-mini*/
+ @media screen and (max-width: 768px) {
+ }
+ 
+ /*phone*/
+ @media screen and (max-width: 600px) {
+  .bigBox-header {
+  flex-direction: column;
+  }
+  .logo {
+    width: 100%;
+    padding-left: 0px;
+   
+  }
+  .logo img{
+    display: block;
+    margin: auto;
+  }
+  
+  .searchBox-BigBox {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 50px;
+  
+  
+  }
+  .targetSearchBox{
+    width: 80%;
+  
+  }
+  
+  .logIn {
+    width:100%;
+    margin: 20px 0px;
+  
+  }
+
+ }
+

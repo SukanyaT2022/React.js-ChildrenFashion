@@ -73,11 +73,12 @@ const MyBagCheckout = () => {
                   <div className="control2SmallBox">
                     <div className="smallleftBox-showOrder">
                       <div className="picLeft-checkout">
-                        <img src={product.url} alt={product.name} height={150} width={150} />
+                        <img src={product.url} alt={product.name} height={250} width={250} className='controlImageCheckout'/>
                       </div>
                       <div className="textRight-checkout">
                         <span>
-                          {product.name}-${product.price}
+                          {product.name}  <br/>
+                          Price: ${product.price}
                         </span>
                       </div>
                       <div className="quantity-dropdown">

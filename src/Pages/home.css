@@ -76,7 +76,11 @@ margin: 40px 0px;
  /*ipad*/
  @media screen and (max-width: 992px) {
     .control2Box-sectionOne{
-        height: 40vh;     
+        height: 40vh; 
+        
+        }
+        .control2Box-sectionOne h1,h3{
+            margin-left: 30px;
         }
         .control-redBox{
         margin-top:35px ;
@@ -88,8 +92,10 @@ margin: 40px 0px;
         }
 .controlh2backtSchool{
 padding: 10px 0px!important;
-background-color: aqua;
+margin: 20px 0px;
 }
+
+
  }
  
  /*ipad-mini*/

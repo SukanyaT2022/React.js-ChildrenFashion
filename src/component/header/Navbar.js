@@ -1,22 +1,23 @@
 import React from 'react';
-import './Navbar.css';
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import './Navbar.css';
 
 function NavBarCustom() {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/">Home</Navbar.Brand>
+          <Navbar.Brand href="/" className='targetNavLink'>Home</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/tshirt">T-Shirts</Nav.Link>
-              <Nav.Link href="/dress">Dresses</Nav.Link>
-              <Nav.Link href="/accessorie">Accessories</Nav.Link>
+              <Nav.Link href="/tshirt" className='targetNavLink'>T-Shirts</Nav.Link>
+              <Nav.Link href="/dress" className='targetNavLink'>Dresses</Nav.Link>
+              <Nav.Link href="/accessorie" className='targetNavLink'>Accessories</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -32,8 +33,8 @@ function NavBarCustom() {
               </NavDropdown> */}
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">Contact Us</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
+              <Nav.Link href="#deets" className='targetNavLink'>Contact Us</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes" className='targetNavLink'>
                 Blog
               </Nav.Link>
             </Nav>

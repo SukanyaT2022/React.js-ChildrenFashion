@@ -7,7 +7,7 @@ const Dress = () => {
   return (
     <div>
     <Layout>
-    <p >dress</p>
+    <p>Shop Girl's Dresses</p>
     <Card data={dresses}/>
     </Layout>
     </div>

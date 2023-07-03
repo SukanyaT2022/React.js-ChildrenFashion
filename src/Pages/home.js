@@ -6,6 +6,7 @@ import Layout from '../component/Layout/layout'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Twobox from '../component/Twobox';
 
 
 const Home = () => {
@@ -41,25 +42,8 @@ const Home = () => {
 <div>
   <h2 className='text-center controlh2backtSchool'>Made a back-to-school list.</h2>
 </div>
-
-{/* section 2 */}
-<div className='main-section2Home section2'>
-<Container>
-  
-      <Row>
-        <Col>
-        <img src='https://images.pexels.com/photos/4982530/pexels-photo-4982530.jpeg?auto=compress&cs=tinysrgb&w=800' />
-        <p>+ NEW ARRIVAL</p>
-        </Col>
-
-        <Col>
-        <img src = 'https://images.pexels.com/photos/5088188/pexels-photo-5088188.jpeg?auto=compress&cs=tinysrgb&w=800'/>
-        <p>PROJECT GAP &gt;</p>
-        </Col>
-      
-      </Row>
-    </Container>
-</div>
+{/* section2 */}
+<Twobox/>
 
 {/* section 3 */}
 
