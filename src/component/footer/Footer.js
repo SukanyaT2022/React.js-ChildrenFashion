@@ -32,7 +32,7 @@ const Footer = () => {
 
         {/* box2 */}
 
-        <div className="samllBox-footer moveSmallBoxLeft">
+        <div className="samllBox-footer moveSmallBoxLeft useForMediaQuerie1">
           <h2>Customer Support</h2>
 
           <ul className="controlUL">
@@ -57,7 +57,7 @@ const Footer = () => {
 
         {/* box3 */}
 
-        <div className="samllBox-footer moveSmallBoxLeft">
+        <div className="samllBox-footer moveSmallBoxLeft useForMediaQuerie2">
           <h2>Customer Support</h2>
 
           <ul className="controlUL">
@@ -82,7 +82,7 @@ const Footer = () => {
 
         {/* box4 */}
 
-        <div className="samllBox-footer moveSmallBoxLeft">
+        <div className="samllBox-footer moveSmallBoxLeft useForMediaQuerie3">
           <h2>Customer Support</h2>
 
           <ul className="controlUL">

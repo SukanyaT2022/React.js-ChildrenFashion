@@ -53,26 +53,28 @@ const Home = () => {
 </div>
 
 {/* section 3 */}
-<div className='main-section2Home section2 mb-3'>
+<div className='main-section2Home section2  controlPicSection3 mb-3'>
 <Container>
   
       <Row>
-        <Col>
+        {/* each row have 12 colume so ipad have 2 on top which 6
+         and 2 box at bottom which is another 6 */}
+        <Col md={6} xs={12}>
         <img src='https://images.pexels.com/photos/5325700/pexels-photo-5325700.jpeg?auto=compress&cs=tinysrgb&w=800' />
         <p>+ NEW ARRIVAL</p>
         </Col>
 
-        <Col>
+        <Col md={6} xs={12}>
         <img src = 'https://images.pexels.com/photos/5905497/pexels-photo-5905497.jpeg?auto=compress&cs=tinysrgb&w=800'/>
         <p>VACATION SHOP &gt;</p>
         </Col>
 
-        <Col>
+        <Col md={6} xs={12}>
         <img src = 'https://images.pexels.com/photos/9035942/pexels-photo-9035942.jpeg?auto=compress&cs=tinysrgb&w=800'/>
         <p>BOY &gt;</p>
         </Col>
 
-        <Col>
+        <Col md={6} xs={12}>
         <img src = 'https://images.pexels.com/photos/189857/pexels-photo-189857.jpeg?auto=compress&cs=tinysrgb&w=800'/>
         <p>GIRL &gt;</p>
         </Col>

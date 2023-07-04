@@ -59,7 +59,7 @@ margin: 40px 0px;
 }
 
 /* section2 */
-
+/* css of this section is on two box componenet*/
 .section2{
 
 }
@@ -70,6 +70,9 @@ margin: 40px 0px;
     height: 70vh;
     object-fit: cover;
     margin-bottom: 5px;
+
+}
+.controlPicSection3 img{
 
 }
 
@@ -94,7 +97,15 @@ margin: 40px 0px;
 padding: 10px 0px!important;
 margin: 20px 0px;
 }
+/* section2 is in twobox component below */
+.section2 img{
+    height: 40vh;
+}
+.controlPicSection3 img{
+    height: 30vh;
+    margin-top: 10px;
 
+}
 
  }
  
