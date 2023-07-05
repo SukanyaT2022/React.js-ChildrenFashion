@@ -11,12 +11,12 @@ const Twobox = () => {
 <Container>
   
       <Row>
-        <Col>
+        <Col xs={12}>
         <img src='https://images.pexels.com/photos/4982530/pexels-photo-4982530.jpeg?auto=compress&cs=tinysrgb&w=800' />
         <p>+ NEW ARRIVAL</p>
         </Col>
 
-        <Col>
+        <Col xs={12}>
         <img src = 'https://images.pexels.com/photos/5088188/pexels-photo-5088188.jpeg?auto=compress&cs=tinysrgb&w=800'/>
         <p>PROJECT GAP &gt;</p>
         </Col>

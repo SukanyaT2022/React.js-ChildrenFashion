@@ -49,7 +49,7 @@ const Home = () => {
 
 {/* text in between */}
 <div>
-  <h2 className='text-center py-4 controlh2backtSchool'>Sunrise to Sunset</h2>
+  <h2 className='text-center py-4 controlh2backtSchool controlPhoneSize'>Sunrise to Sunset</h2>
 </div>
 
 {/* section 3 */}

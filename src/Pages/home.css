@@ -115,5 +115,26 @@ margin: 20px 0px;
  
  /*phone*/
  @media screen and (max-width: 600px) {
-  
+    .control-redBox{
+ width: 90%;
+ margin: 20px auto;
+           
+        }
+        .control2Box-sectionOne{
+            width: 100%;
+            height: 55vh;
+            background-image: url("https://images.pexels.com/photos/4484876/pexels-photo-4484876.jpeg?auto=compress&cs=tinysrgb&w=800")
+            
+            ;
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat
+            
+            ;
  }
+ .controlPhoneSize{
+   margin: 0px 0px!important;
+   
+ }
+
+}

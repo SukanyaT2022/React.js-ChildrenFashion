@@ -6,7 +6,7 @@ const tshirt = () => {
   return (
     <div>
   <Layout>
-    <p>TOPS & T-SHIRTS</p>
+    <h4 className='TargetTshirtTitle text-center my-5' >TOPS & T-SHIRTS</h4>
     <Card data={shirt}/>
   </Layout>
   </div>
