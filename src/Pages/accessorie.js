@@ -6,7 +6,7 @@ const Accessorie = () => {
   return (
     <>
    <Layout>
-    <p>Accesories | Jewelry</p>
+   <h3 className='text-center mt-5'>Accesories | Jewelry</h3>
     <Card data = {accesories}/>
     {/* // from line 162 on data.js const accesories need to match */}
    </Layout>

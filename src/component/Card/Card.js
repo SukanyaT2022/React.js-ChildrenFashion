@@ -19,6 +19,7 @@ const handleAddtoBag =(item)=>{
           {/* //this line keep track all individual the shirt from react */}
 
           <div className="smallBox-card">
+
             <div className="imageBox">
               <img src={singleShirt.url} />
               {/* line above connct to url in data.js file */}

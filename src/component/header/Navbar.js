@@ -11,10 +11,11 @@ function NavBarCustom() {
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/" className='targetNavLink'>Home</Navbar.Brand>
+         
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
+            <Nav.Link href="/" className='targetNavLink'>Home</Nav.Link>
               <Nav.Link href="/tshirt" className='targetNavLink'>T-Shirts</Nav.Link>
               <Nav.Link href="/dress" className='targetNavLink'>Dresses</Nav.Link>
               <Nav.Link href="/accessorie" className='targetNavLink'>Accessories</Nav.Link>
