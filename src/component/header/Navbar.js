@@ -19,6 +19,9 @@ function NavBarCustom() {
               <Nav.Link href="/tshirt" className='targetNavLink'>T-Shirts</Nav.Link>
               <Nav.Link href="/dress" className='targetNavLink'>Dresses</Nav.Link>
               <Nav.Link href="/accessorie" className='targetNavLink'>Accessories</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes" className='targetNavLink'>
+                Blog
+              </Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -34,10 +37,8 @@ function NavBarCustom() {
               </NavDropdown> */}
             </Nav>
             <Nav>
-              <Nav.Link href="#deets" className='targetNavLink'>Contact Us</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes" className='targetNavLink'>
-                Blog
-              </Nav.Link>
+              {/* <Nav.Link href="/contact" className='targetNavLink'>Contact Us</Nav.Link> */}
+            
             </Nav>
           </Navbar.Collapse>
         </Container>
