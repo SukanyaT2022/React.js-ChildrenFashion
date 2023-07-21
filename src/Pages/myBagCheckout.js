@@ -57,6 +57,7 @@ const MyBagCheckout = () => {
     <div>
       <Header />
       <NavBar />
+      <div className='wrapper-mainCheckbag'>
       <div className="mainBox-checkout">
         <h3>My Bag</h3>
         {data ? (
@@ -73,7 +74,7 @@ const MyBagCheckout = () => {
                   <div className="control2SmallBox">
                     <div className="smallleftBox-showOrder">
                       <div className="picLeft-checkout">
-                        <img src={product.url} alt={product.name} height={250} width={250} className='controlImageCheckout'/>
+                        <img src={product.url} alt={product.name} height={300} width={300} className='controlImageCheckout'/>
                       </div>
                       <div className="textRight-checkout">
                         <span>
@@ -106,6 +107,8 @@ const MyBagCheckout = () => {
         ) : (
           <p>Please Choose items</p>
         )}
+      
+      </div>
       </div>
       <Footer />
     </div>
