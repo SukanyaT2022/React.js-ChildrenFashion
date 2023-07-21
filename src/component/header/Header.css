@@ -79,7 +79,7 @@ border-image-slice: 1;
 .targetBackground{
   background-image:url("../../assets/images/raibow2.jpg") ;
 background-size: cover;
-font-size: ;
+
 
 }
 
@@ -126,7 +126,6 @@ margin: auto!important;
     width: 30%;
     justify-content: flex-start;
     padding-left: 50px;
-  
   
   }
   .targetSearchBox{
